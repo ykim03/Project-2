@@ -1,8 +1,33 @@
+body {
+	font-family: georgia;
+}
+fieldset {
+	margin-top: 30px;
+}
+
+#header .nav {
+	float: right;
+	background: pink;
+}
+
+#header .nav li {
+	float: left;
+	margin-right: 10px;
+}
+
+#granny {
+	height: 230px;
+}
+
+#content .progress {
+	float: right;
+}
 
 label {
-	font-size: 22px;
+	font-size: 32px;
+	font-family: 'ArvoRegular';
 	text-transform: uppercase;
-	letter-spacing: .2em;
+	letter-spacing: .1em;
 	color:rgba(107,97,122,0.76);
 	font-weight: 100;
 }
@@ -23,7 +48,7 @@ input[type="text"] {
 	font-size: 21px;
 	border: none;
 	background-color: #e9e6ec;
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-bottom: 25px;
 }
 
@@ -58,4 +83,24 @@ input[type="submit"]:hover {
 	font-size: 16px;
 	font-weight: 500;
 	margin-top:-10px;
+}
+
+.home {
+	background: red;
+}
+
+.interior {
+	background: yellow;
+}
+
+.register #header .nav {
+	background: blue;
+}
+
+.slideshow img {
+	display: none;
+}
+
+.slideshow img:first-child {
+	display: block;
 }
