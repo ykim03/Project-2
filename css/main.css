@@ -1,52 +1,108 @@
 body {
 	font-family: georgia;
+	font-family: 'Raleway', sans-serif ;
+	font-weight: 700;
+	letter-spacing: .2em;
 }
+
+
+
 fieldset {
 	margin-top: 30px;
 }
 
 #header {
-	background: url(../img/mainheadernotext.tif) left top no-repeat;
-	height: 262px;
+	background: url(../img/mainheadernotext3.tif) center top no-repeat;
+	height: 265px;
+	width: 100%;
+	padding-top: 1px;
 	position: relative;
-	margin-top: 15px;
+	margin-top: -20px;
 }
 
 #granny {
 	margin: 0;
 	position: relative;
 	left: 49%;
-	margin-left: -84px;
-	margin-top: 45px;
+	width: 200px;
+	margin-left: -88px;
+	padding-top: 50px;
 }
 
-#header .nav {
-	background: rgba(144,156,204,0.79);
-	color: white;
-	margin: 0;
+#nav-wrapper {
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
-	display: block;
-	
+		font-family: 'Raleway', sans-serif ;
+	color: white;
+	border-bottom: 3px solid rgba(105,99,123,0.76);
+	background: rgba(144,156,204,0.79);
+}
+
+#emailus {
+	font-size: 20px !important;
 }
 
 #header .nav li {
 	float: left;
 	text-decoration: none;
-	margin:  0 50px;
+	margin:  0 0 0 109px;
 	padding: 11px 0;
 	color: white;
 	font-size: 17px;
-	font-weight: 400; 
+		font-family: 'Raleway', sans-serif ;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+
+#header .nav li:first-child {
+	margin-left: 0;
 }
 
 #header .nav a {
 	color: white;
 	text-decoration: none;
-	font-weight: 400;
+		font-family: 'Raleway', sans-serif ;
+	font-weight: 700;
+	letter-spacing: .2em;
 }
 
+.subtext {
+	font-size: 26px;
+	font-family: 'Raleway', sans-serif ;
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+.maintext {
+	margin-left: 20px;
+	font-family: 'Raleway', sans-serif ;
+}
+
+.list {
+	margin-left: 20px;
+}
+
+
+p {
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+li {
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+
+h5 {
+	font-family: 'Raleway', sans-serif ;
+	font-size: 20px;
+	color: #b44141;
+	font-weight: 500 ;
+}
 
 .photobar {
 	position: relative;
@@ -59,27 +115,46 @@ fieldset {
 	position: relative;
 	left: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#slideshow-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
 }
 
 #slideshow-nav a {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 15px;
+	height: 15px;
 	overflow: hidden;
 	margin-right: 15px;
 	text-indent: -9999px;
-	background: #000;
+	background: rgba(105,99,123,0.76);
 	-webkit-border-radius: 50%;
-	position: absolute;
+	position: relative;
+	left: 730px;
+	margin-top: 310px;
 	}
+
+#column-2 {
+	position: absolute;
+	left: 700px;
+	top: 440px;
+	height: 360px;
+}
 
 
 #slideshow-nav a.activeSlide {
-	background-color: red;
+	background-color: rgba(144,156,204,0.79);
 }
 
 .titlepage {
 	margin-left: 60px;
+	font-family: 'Raleway', sans-serif ;
+	letter-spacing: .2em;
 }
 
 
@@ -90,22 +165,44 @@ fieldset {
 }
 
 
+.playtext {
+	font-family: 'Raleway', sans-serif ;
+	font-weight: 500;
+	padding-left: 15px;
+
+}
+
 
 h1 {
-	font-size: 45px;
+	font-size: 48px;
 	color: #b44141;
 	margin-top: 30px;
+	font-family: 'Raleway', sans-serif ;
 }
 
 h2 {
-	font-size: 32px;
-	color: #435588
+	font-size: 36px;
+	color: #2c3e6f;
+	font-family: 'Raleway', sans-serif ;
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif ;
 }
 
+.links {
+	display: block;
+	position: relative;
+	padding-left: 16%;
+	margin-top: 25px;
+
+}
+
+
+a {
+	text-decoration: none;
+}
 
 #content .progress {
 	float: right;
@@ -114,7 +211,6 @@ h4 {
 
 label {
 	font-size: 22px;
-	font-family: 'ArvoRegular';
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	color:rgba(107,97,122,0.76);
@@ -167,6 +263,11 @@ input[type="submit"]:hover {
 	background: rgba(107,97,122,0.76);
 }
 
+#help {
+	height: 100px;
+	float: right;
+	margin-top: -10px;
+}
 
 .error {
 	text-transform: inherit;
@@ -177,6 +278,77 @@ input[type="submit"]:hover {
 	margin-top:-10px;
 }
 
+
+.home #content .columns {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+}
+
+.home #column-1 {
+	margin:0;
+	padding-right: 40px;
+	border-right: 3px solid #000;
+	
+	
+}
+
+.home #column-1 > div {
+	margin: 25px 0 0;
+	padding: 20px 0 0;
+	border-top: 3px solid #000;
+	overflow: hidden;
+}
+
+.home #column-1 div:first-child {
+
+	border-top: 3px solid #000;
+	padding-top: 0px;
+	
+}
+
+.home #omega column-1 .sub {
+	border-left: none;
+
+}
+
+.home #column-1 .sub:first-of-type {
+	border-left: none;
+}
+
+.home #column-2 {
+	float: right;
+	margin-right: -20px;
+}
+
+#hats {
+	color: #b44141;
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+
+#ladies {
+	float: right;
+}
+
+
+#and {
+	font-size: 28px;
+	letter-spacing: .2em;
+	font-weight: 500;
+	color: rgba(105,99,123,0.76);
+}
+
+.tight {
+	margin-top: -5px;
+}
+
+
+
+#textblock {
+	margin-left: 30px;
+	
+}
 
 .interior {
 	background: yellow;
@@ -192,4 +364,29 @@ input[type="submit"]:hover {
 
 .slideshow img:first-child {
 	display: block;
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#content {
+	padding-bottom: 80px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -45px; /* negative value of footer height */
+		height: 45px;
+	clear:both;
+	border-top: 3px solid rgba(105,99,123,0.76);
+	background-color: rgba(144,156,204,0.79);
+} 
+    
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
