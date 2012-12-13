@@ -18,6 +18,7 @@ fieldset {
 	padding-top: 1px;
 	position: relative;
 	margin-top: -20px;
+	font-family: 'Raleway', sans-serif ;
 }
 
 #granny {
@@ -38,6 +39,7 @@ fieldset {
 	color: white;
 	border-bottom: 3px solid rgba(105,99,123,0.76);
 	background: rgba(144,156,204,0.79);
+	height:43px;
 }
 
 #emailus {
@@ -94,6 +96,7 @@ p {
 li {
 	font-weight: 500;
 	letter-spacing: 0.1em;
+	font-family: 'Raleway', sans-serif ;
 }
 
 
